@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Data analysis and Statistical modeling}{4}{0}{2}
+\beamer@sectionintoc {3}{What's deep learning}{12}{0}{3}
+\beamer@sectionintoc {4}{Case study}{22}{0}{4}
+\beamer@sectionintoc {5}{Let's go to practice.}{30}{0}{5}
