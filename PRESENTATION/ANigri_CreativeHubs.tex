@@ -68,7 +68,7 @@
 \begin{itemize}
 	
 	\item In the \textbf{data analysis}, these bricks are the data
-	\item Data that must be treated according to a given patter - our statistical model - to recreate/represent an observed reality that we want to approximate.
+	\item Data that must be treated according to a given pattern - our statistical model - to recreate/represent an observed reality that we want to approximate.
 \end{itemize}
 
 \textbf{Why....?}
@@ -77,6 +77,7 @@
 \end{frame}
 
 \begin{frame}
+\small
 \textbf{Interpret or predict}
 \begin{itemize}
  \item To make decisions under conditions of uncertainty or even to anticipate upcoming scenarios and events.
@@ -84,6 +85,11 @@
  \item To this end, statistics uses probability to develop models with an underlying probabilistic nature to explain a given reality.
  
 \end{itemize}
+
+\begin{figure}
+	\centering
+\includegraphics[width=.9\linewidth]{data_analisys}
+\end{figure}
 
 \textbf{but...}
 \end{frame}
@@ -106,7 +112,7 @@ We will \textbf{never} know the so-called data generating model, i.e. the real m
 
 %uno dei modelli piu semplici è quello lineare esempio classico è quello relazione consumi reddito, relazione cd lineare poichè puo essere rappresentata in maniera abbastanza precisa da una retta con una certa intercetta e un coeff angolare. Purtroppo pero la realtà non è sempre lineare, noi stimiamo una relazione ma la vera relazione che possono essere dati da fenomeni comportamentali fisici non la conosceremo mai ma la posiamo approssimare con un certo margine di errore, in questo caso la regressione lineare, che altro non è una retta stimata con un metodo probabilistico che va a stimare la migliore retta passante per certi punti 
 
-\begin{frame}
+\begin{frame}{Linear model}
 	\begin{figure}
 		\centering
 		\includegraphics[width=.75\linewidth]{income}
@@ -255,7 +261,7 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 
  \begin{frame}
  	\footnotesize
-\textbf{Results: consumption is more common among}
+\textbf{Results 1: consumption is more common among}
 \begin{itemize}
 	\item young respondents,  
 	\item females,
@@ -263,7 +269,7 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 	\item the role of the subjective norm (other people influence on our choices) is positively associated with increased consumption of RTE salads. 
 \end{itemize}		
 
-\textbf{Results: Predictive models}
+\textbf{Results 2: Best predictive models}
 \begin{itemize}
 	\item RT
 	\item RF
@@ -272,8 +278,53 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 \end{itemize}		 	
 \end{frame}
 
-\begin{frame}
-	\tiny
+%\begin{frame}
+%	\tiny
+%	\begin{table}[H]
+%		\begin{tabular}{l|l|l|l}
+%			\hline
+%			\textbf{Variable}                 & \textbf{Frequency} & \textbf{Variable}                              &% \textbf{Frequency} \\ \hline
+%			\textbf{Gender}                   & \textit{}          & \textbf{Regular consumption of RTE}            & \textit{}          \\ \hline
+%			\textit{Female}                   & \textit{52\%}      & salads                                         & \textit{}          \\ \hline
+%			\textit{Male}                     & \textit{48\%}      & \textit{Yes}                                   & \textit{25\%}      \\ \hline
+%			\textbf{Age}                      & \textit{}          & \textit{No}                                    & \textit{75\%}      \\ \hline
+%			\textit{21-25}                    & \textit{23\%}      & \textbf{Fitness}                               & \textit{}          \\ \hline
+%			\textit{26-30}                    & \textit{34\%}      & \textit{Yes}                                   & \textit{48\%}      \\ \hline
+%			\textit{31-35}                    & \textit{12\%}      & \textit{No}                                    & \textit{52\%}      \\ \hline
+%			\textit{36-40}                    & \textit{17\%}      & \textbf{Learning-advertising}        &                    \\ \hline
+%			\textit{\textgreater{}40}         & \textit{14\%}      & \textit{Yes}                                   & \textit{76\%}      \\ \hline
+%			\textbf{Income}                   & \textit{}          & \textit{No}                                    & \textit{24\%}      \\ \hline
+%			\textit{Below 15,000rmb}          & \textit{28\%}      & \textbf{Learning-social media}       &                    \\ \hline
+%			\textit{Between 15 and 20,000rmb} & \textit{25\%}      & \textit{Yes}                                   & \textit{31\%}      \\ \hline
+%			\textit{Between 20 and 25,000rmb} & \textit{21\%}      & \textit{No}                                    & \textit{69\%}      \\ \hline
+%			\textit{More than 25,000rmb}      & \textit{27\%}      & \textbf{Purchasing-supermarket}       & \textit{}          \\ \hline
+%			\textbf{Job seniority level}      & \textit{}          & \textit{Yes}                                   & \textit{75\%}      \\ \hline
+%			\textit{Entry}                    & \textit{40\%}      & \textit{No}                                    & \textit{25\%}      \\ \hline
+%			\textit{Middle}                   & \textit{45\%}      & \textbf{Purchasing-convenience store} & \textit{}          \\ \hline
+%			\textit{Managerial}               & \textit{15\%}      & \textit{Yes}                                   & \textit{49\%}      \\ \hline
+%			\textbf{Household size}           & \textit{}          & \textit{No}                                    & \textit{51\%}      \\ \hline
+%			\textit{One or two people}        & \textit{18\%}      & \textbf{Consumption for snacking}              & \textit{}          \\ \hline
+%			\textit{Three people}             & \textit{50\%}      & \textit{Yes}                                   & \textit{60\%}      \\ \hline
+%			\textit{More than three people}   & \textit{32\%}      & \textit{No}                                    & \textit{40\%}      \\ \hline
+%			\textbf{Knowledge of RTE}         & \textit{}          & \textbf{Consumption for lunch}                 & \textit{}          \\ \hline
+%			\textit{Low}                      & \textit{25\%}      & \textit{Yes}                                   & \textit{60\%}      \\ \hline
+%			\textit{Medium}                   & \textit{39\%}      & \textit{No}                                    & \textit{40\%}      \\ \hline
+%			\textit{High}                     & \textit{36\%}      &                                                & \textit{}          \\ \hline
+%			
+		%	\textbf{Subjective norm}          & \textit{}          & \textbf{}                 & \textit{}          %\\ \hline
+	%		\textit{Low}                      & \textit{10.79\%}      & \textit{}                                   & \textit{60\%}      \\ \hline
+%			\textit{Medium}                   & \textit{51.76\%}      & \textit{}                                    & \textit{40\%}      \\ \hline
+%			\textit{High}                     & \textit{37.44\%}      &                                                & \textit{}          \\ \hline
+			
+%		\end{tabular}
+%		\caption{Descriptive Statistics}
+%		\label{table:statistics}
+%	\end{table}
+%\end{frame}
+
+
+\begin{frame}{Data}
+	\scriptsize
 	\begin{table}[H]
 		\begin{tabular}{l|l|l|l}
 			\hline
@@ -291,7 +342,21 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 			\textit{Below 15,000rmb}          & \textit{28\%}      & \textbf{Learning-social media}       &                    \\ \hline
 			\textit{Between 15 and 20,000rmb} & \textit{25\%}      & \textit{Yes}                                   & \textit{31\%}      \\ \hline
 			\textit{Between 20 and 25,000rmb} & \textit{21\%}      & \textit{No}                                    & \textit{69\%}      \\ \hline
-			\textit{More than 25,000rmb}      & \textit{27\%}      & \textbf{Purchasing-supermarket}       & \textit{}          \\ \hline
+			\textit{More than 25,000rmb}      & \textit{27\%}      & \textbf{}       & \textit{}          \\ \hline
+					
+		\end{tabular}
+		\caption{Descriptive Statistics}
+		\label{table:statistics}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Data}
+	\scriptsize
+	\begin{table}[H]
+		\begin{tabular}{l|l|l|l}
+			\hline
+			\textbf{Variable}                 & \textbf{Frequency} & \textbf{Variable}                              & \textbf{Frequency} \\ \hline
+			 & & \textbf{Purchasing-supermarket}       & \textit{}          \\ \hline
 			\textbf{Job seniority level}      & \textit{}          & \textit{Yes}                                   & \textit{75\%}      \\ \hline
 			\textit{Entry}                    & \textit{40\%}      & \textit{No}                                    & \textit{25\%}      \\ \hline
 			\textit{Middle}                   & \textit{45\%}      & \textbf{Purchasing-convenience store} & \textit{}          \\ \hline
@@ -306,15 +371,30 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 			\textit{High}                     & \textit{36\%}      &                                                & \textit{}          \\ \hline
 			
 			\textbf{Subjective norm}          & \textit{}          & \textbf{}                 & \textit{}          \\ \hline
-			\textit{Low}                      & \textit{10.79\%}      & \textit{}                                   & \textit{60\%}      \\ \hline
-			\textit{Medium}                   & \textit{51.76\%}      & \textit{}                                    & \textit{40\%}      \\ \hline
+			\textit{Low}                      & \textit{10.79\%}      & \textit{}                                   & \textit{}      \\ \hline
+			\textit{Medium}                   & \textit{51.76\%}      & \textit{}                                    & \textit{}      \\ \hline
 			\textit{High}                     & \textit{37.44\%}      &                                                & \textit{}          \\ \hline
 			
 		\end{tabular}
-		\caption{Descriptive Statistics}
+		
 		\label{table:statistics}
 	\end{table}
 \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}{Accuracy prediction}
 	\scriptsize
@@ -328,20 +408,21 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 	\end{tabular}
 \end{table}
 	
-For binary target variables, we evaluate the level of accuracy and its $95 \%$ confidence interval (CI), true positive rate (Sensitivity), true negative rate (Specificity), and Cohen's Kappa. We define  $y=1$ for a regular consuption of RTE and 0 otherwise. Then a $2 \times 2$ confusion matrix has elements $a_{\text {row,column }}$ with predicted conditions $\widehat{y}=\{1,0\}$ on rows and true conditions $y=\{1,0\}$ on columns. The statistics are defined by,
-
-	$\text{Accuracy }=\frac{TP+TN}{TP+FP+FN+TN}$
+For binary target variables, we evaluate the level of accuracy, true positive rate (Sensitivity) and true negative rate (Specificity). We define  $y=1$ for a regular consuption of RTE and 0 otherwise. Then a $2 \times 2$ confusion matrix has elements $a_{\text {row,column }}$ with predicted conditions $\widehat{y}=\{1,0\}$ on rows and true conditions $y=\{1,0\}$ on columns. The statistics are defined by: $\text{Accuracy }=\frac{TP+TN}{TP+FP+FN+TN}$
 
 \end{frame}
 
 \begin{frame}{Accuracy prediction}
 	\scriptsize
+\begin{itemize}
+	\item We calculate accuracy that refers to the portion of customers correctly classified with respect to RTE regular consumption.
+	
+	\item Sensitivity (true positive rate) refers to the proportion of regular RTE consumers correctly identified as such. Poor sensitivity implies a large number of inclusion errors, i.e. identifying RTE consumers when in fact they are not.
+	\item   Specificity (true negative rate) refers to the proportion of customers correctly predicted to be occasional RTE consumers. Poor specificity implies a large number of exclusion errors. 
+\end{itemize}
 
-We calculate accuracy that refers to the portion of customers correctly classified with respect to RTE regular consumption.
-We calculate the 95\% confidence interval using accuracy’s standard deviation generated through iterations. 
-Sensitivity (true positive rate) refers to the proportion of regular RTE consumers correctly identified as such. Poor sensitivity implies a large number of inclusion errors, i.e. identifying RTE consumers when in fact they are not.  Specificity (true negative rate) refers to the proportion of customers correctly predicted to be occasional RTE consumers. Poor specificity implies a large number of exclusion errors. 
 
-The reported output also provides the McNemar test and the numerical and graphical representation of the ROC curve and the relative area under the curve (AUC) values. The area under the (ROC) curve, summarizes the classifier performance. The larger area under the curve the better the classifier.
+The reported output will provide the numerical and graphical representation of the ROC curve and the relative area under the curve (AUC) values. The area under the (ROC) curve, summarizes the classifier performance. The larger area under the curve the better the classifier.
 \end{frame}
 
 \begin{frame}{Accuracy prediction}

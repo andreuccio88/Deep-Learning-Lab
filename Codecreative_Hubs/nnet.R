@@ -7,29 +7,12 @@ library(rattle)
 library(ggplot2)
 library(rpart.plot)
 library(rattle)
-library(sjPlot)
-library(sjmisc)
-library(sjlabelled)
+#library(sjPlot)
+#library(sjmisc)
+#library(sjlabelled)
 
-
-d <- read_excel("data.xls")[,-1]
-dim(d)
-
-#d$age3[d$age3==5] <- 
-
-D <- d %>% select(-c(buy_other,consumption_other,immediate_consumption,
-                     product_char1,product_char2,
-                     product_char3,product_char4,
-                     product_char5,product_char6,
-                     product_char7,product_char8,
-                     product_char9)) %>% na.omit()
-dim(D)
-
-
-
-
-D[, 1:27] <- lapply(D[, 1:27], as.factor)
-
+load("D.RData")
+head(D)
 
 set.seed(1)
 
@@ -38,20 +21,13 @@ train = D[d_idx, ]
 test = D[-d_idx, ]
 
 
-
-full.model <- glm(reg_RTE_salad~gender+
-                    age3+income+seniority+hh_size+knowledge_I+
-                    fitness+howlearn_adv+howlearn_social+buy_supermarket+buy_convenience_store
-                  +consumption_lunch_box+
-                    consumption_snacking+SN_I,
+# Logit
+full.model <- glm(reg_RTE_salad~gender+age3+income+seniority+hh_size+knowledge_I+
+                  fitness+howlearn_adv+howlearn_social+buy_supermarket+buy_convenience_store+
+                  consumption_lunch_box+consumption_snacking+SN_I,
                   data = train, family = binomial(link="logit"))
 
-
-
-#full.model <- glm(reg_RTE_salad~.,
-#                  data = train, family = binomial(link="logit"))
 summary(full.model)
-#tab_model(full.model,step.model,show.ci = FALSE)
 
 predicted_full = as.factor(ifelse(predict(full.model, newdata = test,type = "response")> 0.5, "1", "0"))
 cmLogit_full <-confusionMatrix(predicted_full, test$reg_RTE_salad)
@@ -67,72 +43,24 @@ basicplot + labs(title="LOGIT",
   scale_x_continuous("1 - Specificity", breaks = seq(0, 1, by = .1))
 
 
-
-
+# NNET tuning
 set.seed(50)
-
-
-
 tuning = expand.grid(unit=round(runif(3, min = 0, max = 100 )))
 tuning = cbind(tuning, performance = rep(0, nrow(tuning)))
 
 for (g in  1:(nrow(tuning))) {
-  
-  RF = train(reg_RTE_salad ~ ., 
+NN = train(reg_RTE_salad ~ ., 
              data=train, 
-             method="nnet", 
+             method="nnet",#"svmLinear", 
              trControl = trainControl(method='repeatedcv', 
                                       number=tuning$unit[g], 
                                       repeats=5,
                                       search = 'random'))
   
-  # PREDICTION
-  predicted_RF = predict(RF, newdata = test)
-  cmRF <-confusionMatrix(predicted_RF, test$reg_RTE_salad)
-  print(cmRF)
-  
-  
-  
-  
-  tuning$performance[g] = cmRF$overall[1]
-  View(tuning)
-  
-}
-##########################
-
-
-
-
-
-
-#######################
-set.seed(324)
-
-RF = train(reg_RTE_salad ~ ., 
-           data=train, 
-           method="svmLinear", 
-           trControl = trainControl(method='repeatedcv', 
-                                    number=20, 
-                                    repeats=5,
-                                    search = 'random'))
-
 # PREDICTION
-predicted_RF = predict(RF, newdata = test)
-cmRF <-confusionMatrix(predicted_RF, test$reg_RTE_salad)
-print(cmRF)
-
-
-importance <- varImp(RF, scale=FALSE)
-plot(importance)
-
-ioRoc <- data.frame(pred=as.numeric(predicted_RF),obs=as.numeric(test$reg_RTE_salad))
-
-#RAPPORTI
-basicplot <- ggplot(ioRoc, aes(d = pred, m =obs)) + geom_roc()
-basicplot + labs(title="RANDOM FOREST",
-                 x ="False Positive Rate", y = "True Positive Rate")+
-  annotate("text", x = .60, y = .55, 
-           label = paste("AUC =", round(calc_auc(basicplot)$AUC, 2))) +
-  scale_x_continuous("1 - Specificity", breaks = seq(0, 1, by = .1))
-
-
+predicted_NN = predict(NN, newdata = test)
+cmNN <-confusionMatrix(predicted_NN, test$reg_RTE_salad)
+print(cmNN)
+tuning$performance[g] = cmRF$overall[1]
+View(tuning)
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.7)  18 DEC 2022 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.7)  18 DEC 2022 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,7 +1007,11 @@ Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
 (C:\Users\Andrew\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(ANigri_CreativeHubs.aux)
+(ANigri_CreativeHubs.aux
+
+LaTeX Warning: Label `table:statistics' multiply defined.
+
+)
 \openout1 = `ANigri_CreativeHubs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -1250,35 +1254,41 @@ Package pdftex.def Info: lego1.png  used on input line 64.
 
 ] [8
 
-] [9
-
 ]
-<box.jpg, id=100, 680.5425pt x 322.20375pt>
+<data_analisys.png, id=94, 460.119pt x 148.1535pt>
+File: data_analisys.png Graphic file (type png)
+<use data_analisys.png>
+Package pdftex.def Info: data_analisys.png  used on input line 95.
+(pdftex.def)             Requested size: 276.559pt x 89.05328pt.
+ [9
+
+ <./data_analisys.png>]
+<box.jpg, id=102, 680.5425pt x 322.20375pt>
 File: box.jpg Graphic file (type jpg)
 <use box.jpg>
-Package pdftex.def Info: box.jpg  used on input line 98.
+Package pdftex.def Info: box.jpg  used on input line 104.
 (pdftex.def)             Requested size: 245.83282pt x 116.39148pt.
- [10
+
+[10
 
  <./box.jpg>]
-<income.png, id=107, 681.54625pt x 520.94624pt>
+<income.png, id=109, 681.54625pt x 520.94624pt>
 File: income.png Graphic file (type png)
 <use income.png>
-Package pdftex.def Info: income.png  used on input line 114.
+Package pdftex.def Info: income.png  used on input line 120.
 (pdftex.def)             Requested size: 230.46739pt x 176.15755pt.
-
-[11
+ [11
 
  <./income.png>] [12
 
 ]
-<ML.jpeg, id=122, 718.685pt x 718.685pt>
+<ML.jpeg, id=124, 718.685pt x 718.685pt>
 File: ML.jpeg Graphic file (type jpg)
 <use ML.jpeg>
-Package pdftex.def Info: ML.jpeg  used on input line 135.
+Package pdftex.def Info: ML.jpeg  used on input line 141.
 (pdftex.def)             Requested size: 138.2795pt x 138.27327pt.
 
-Overfull \vbox (32.07208pt too high) detected at line 135
+Overfull \vbox (32.07208pt too high) detected at line 141
  []
 
 [13
@@ -1290,18 +1300,18 @@ Overfull \vbox (32.07208pt too high) detected at line 135
 ] [16
 
 ]
-<story.jpg, id=155, 890.1255pt x 319.1925pt>
+<story.jpg, id=156, 890.1255pt x 319.1925pt>
 File: story.jpg Graphic file (type jpg)
 <use story.jpg>
-Package pdftex.def Info: story.jpg  used on input line 176.
+Package pdftex.def Info: story.jpg  used on input line 182.
 (pdftex.def)             Requested size: 307.28987pt x 110.19458pt.
  [17
 
  <./story.jpg>]
-<NNmodel.jpg, id=162, 511.31026pt x 440.24475pt>
+<NNmodel.jpg, id=163, 511.31026pt x 440.24475pt>
 File: NNmodel.jpg Graphic file (type jpg)
 <use NNmodel.jpg>
-Package pdftex.def Info: NNmodel.jpg  used on input line 184.
+Package pdftex.def Info: NNmodel.jpg  used on input line 190.
 (pdftex.def)             Requested size: 230.46739pt x 198.43747pt.
  [18
 
@@ -1310,13 +1320,13 @@ Package pdftex.def Info: NNmodel.jpg  used on input line 184.
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 222.
 
  [20
 
@@ -1324,7 +1334,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 231.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 237.
 
  [22
 
@@ -1336,33 +1346,55 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <12> not available
 
 ]
 LaTeX Font Info:    Trying to load font information for OML+cmss on input line 
-317.
-LaTeX Font Info:    No file OMLcmss.fd. on input line 317.
+351.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 351.
 
 
 LaTeX Font Warning: Font shape `OML/cmss/m/it' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 317.
+(Font)              for symbol `textgreater' on input line 351.
 
 
-Overfull \vbox (50.85135pt too high) detected at line 317
+Overfull \hbox (19.2109pt too wide) in paragraph at lines 351--351
+ [] 
+ []
+
+
+Overfull \vbox (6.50606pt too high) detected at line 351
  []
 
 [26
 
-] [27
+]
+Overfull \hbox (6.86583pt too wide) in paragraph at lines 382--382
+ [] 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{table:statist
+ics}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \end{frame}
+                 
+Overfull \vbox (15.7475pt too high) detected at line 382
+ []
+
+[27
 
 ] [28
 
+] [29
+
 ]
-<logit.png, id=239, 578.16pt x 433.62pt>
+<logit.png, id=246, 578.16pt x 433.62pt>
 File: logit.png Graphic file (type png)
 <use logit.png>
-Package pdftex.def Info: logit.png  used on input line 353.
+Package pdftex.def Info: logit.png  used on input line 434.
 (pdftex.def)             Requested size: 245.83282pt x 184.36876pt.
- [29
+ [30
 
- <./logit.png>] [30
+ <./logit.png>] [31
 
 ]
 \tf@nav=\write6
@@ -1378,22 +1410,25 @@ Package pdftex.def Info: logit.png  used on input line 353.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `ANigri_CreativeHubs.out' has not changed.
 (rerunfilecheck)             Checksum: 478206CFDE02CBB1F093190355783F83;725.
  ) 
 Here is how much of TeX's memory you used:
- 27522 strings out of 478593
- 562985 string characters out of 2844133
- 823206 words of memory out of 3000000
- 45028 multiletter control sequences out of 15000+600000
+ 27536 strings out of 478593
+ 563241 string characters out of 2844133
+ 816246 words of memory out of 3000000
+ 45040 multiletter control sequences out of 15000+600000
  483042 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1844b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcs
 s0800.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\tcss1095.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\tcss1000.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\tcss0600.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/l
+600\tcss1000.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\tcss0600.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\tcss1095.pk> <C:\Users\Andrew\AppData\Local\MiKTeX\fonts/pk/l
 jfour/jknappen/ec/dpi600\tcss1200.pk><C:/Users/Andrew/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Andrew/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Andr
@@ -1409,9 +1444,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/And
 rew/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/
 Users/Andrew/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb>
-Output written on ANigri_CreativeHubs.pdf (30 pages, 3391733 bytes).
+Output written on ANigri_CreativeHubs.pdf (31 pages, 3433576 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
