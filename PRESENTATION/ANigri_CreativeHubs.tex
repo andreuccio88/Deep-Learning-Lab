@@ -223,16 +223,34 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 
 \begin{frame}
 	\scriptsize
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=.9\linewidth]{gradient}		
+	\end{figure}
+\end{frame}
+	\begin{frame}
+		\scriptsize
+	\begin{figure}
+		\centering
+		\includegraphics[width=.8\linewidth]{traintest}		
+	\end{figure}
+	
+	
 	\begin{itemize}
-	\item 	NN, like other machine learning techniques, requires the splitting of the dataset into a training and a testing set. The training set stands for supervised learning, while the testing set is used to
-	validate the model. After the training phase, the network has learned the input–output functional relationship and it should be able to predict future values using only the input.
+
 	\item The search for the optimal parameters is then carried out through an optimization process where the NN initial weights are selected in an arbitrary (random) way so they are not optimal parameters. The iterations of the algorithm lead to the optimization of the weights and minimization of the error. 
 	The choices concerning the type of architecture (e.g., the number of hidden layers, units for each layer) and the hyperparameter (e.g., learning rate, activation functions, and loss function), remains a heuristic problem for NN users: the choice often depends on the type of data and it is not an easy step. 
 
 	\end{itemize}
 \end{frame}
 
-
+\begin{frame}{Book}
+		\begin{figure}
+		\centering
+		\includegraphics[width=.45\linewidth]{book}		
+	\end{figure}
+\end{frame}
 
 \section{Case study}
 
@@ -380,18 +398,6 @@ To update the weights ($\mathbf{\tilde{W}}$), the gradient of the loss function,
 		\label{table:statistics}
 	\end{table}
 \end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
